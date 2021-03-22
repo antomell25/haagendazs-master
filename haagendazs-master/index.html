@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haagen-Dazs Shop</title>
+    <link rel="shortcut icon" href="helado.png" type="image/x-icon">
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    header{
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    background-color: rgba(126, 116, 116, 0.575);
+}
+section{
+    height: 100vh;
+    padding-top: 120px;
+}
+#sec1{
+    background: url(fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;  
+    background-position: center; 
+}
+#sec2{
+    background-color: rgb(161, 59, 59);
+}
+#bom{
+    background-color: rgb(148, 103, 95);
+}
+#sec3{
+    background-color: rgb(177, 93, 33);
+}
+#sec4{
+    background-color: rgb(121, 69, 32);
+}
+    .navI, .navD{
+    height: 100%;
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+}
+.navI span{
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+#titulo{
+    vertical-align: 80%;
+}
+.amarillo{
+    color: #682b02;
+}
+.azul{
+    color: rgb(87, 4, 4);
+}
+.blanco{
+    color: rgb(255, 255, 255);
+}
+
+.navD{
+    padding-top: 30px;
+    margin-left: 45px;
+}
+.navI img{
+    height: 100%;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    /*border: 1px solid black;*/
+    margin-left: 8px;
+    margin-right: 8px;
+    border-radius: 25px;
+    font-size: 20px;
+}
+nav a:hover{
+    box-shadow: 0px 0px 20px rgb(80, 6, 6);
+    background: rgb(80, 6, 6);
+}
+
+.contendor{
+    text-align: center;
+    /*border: 1px solid white;*/
+}
+
+.cajai{
+    width: 50%;
+    height: 80%;
+    display: inline-block;
+    vertical-align: top;
+    /*border: 1px solid blue;*/
+    text-align: right;
+    position: relative;
+    margin-left: 10%;
+}
+.cajad{
+    width: 22%;
+    height: 80%;
+    display: inline-block;
+    vertical-align: top;
+    /*border: 1px solid blue;*/
+    text-align: right;
+    position: relative;
+}
+.cajai img{
+    width: 100%;
+}
+.titulo{
+    width: 225px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(63, 51, 51, 0.432);
+    border-radius: 20px;
+    color: #f8f5f5;
+    margin-top: 140px;
+    top: 0px;
+    right: 0px;
+}
+marquee img{
+    padding-top: 200px;
+    width: 15%;
+    height: 100px;
+}
+/***sec1***/
+.hel{
+    text-align: center;
+    color: white;
+}
+.conten1{
+    text-align: center;
+    /*border: 1px solid white;*/
+    padding-top: 10px;
+}
+.tarrinas{
+    display: inline-block;
+    vertical-align: top;
+    height: 210px;
+    width: 20%;
+    margin-left: 10px;
+    margin-right: 10px;
+    /*border: 1px solid black;*/
+}
+.tarrinas img{
+    width: 60%;
+}
+.tarrinas b{
+    color: white;
+}
+/***sec2***/
+.hel1{
+    text-align: center;
+    color: white;
+}
+.conten2{
+    text-align: center;
+    /*border: 1px solid white;*/
+    padding-top: 10px;
+}
+.bombones{
+    display: inline-block;
+    vertical-align: top;
+    height: 220px;
+    width: 20%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    /*border: 1px solid black;*/
+}
+.bombones img{
+    width: 90%;
+}
+.bombones b{
+    color: white;
+}
+.detalle{
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    /*border: 1px solid white;*/
+   margin-top: 100px;
+   margin-left: 100px;
+
+}
+.botoncito a{
+    display: inline-block;
+    vertical-align: top;
+    /*border: 1px solid black;*/
+    height: 30px;
+    width: 12%;
+    border-radius: 30px;
+    padding: 5px 10px;
+    padding-top: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+.botoncito a:hover{
+    box-shadow: 0px 0px 18px white;
+}
+/***sec2***/
+
+.hel2{
+    color: white;
+    text-align: center;
+}
+.conte{
+    text-align: center;
+   /* border: 1px solid white;*/
+    margin-top: 15px;
+}
+.sabor{
+    display: inline-block;
+    vertical-align: top;
+    width: 15%;
+    height: 190px;
+   /* border: 1px solid black;*/
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.sabor img{
+    width: 75%;
+}
+.sabor1{
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    height: 190px;
+    margin: right 20px;
+}
+.sabor1 img{
+    width: 70%;
+   height: 190px;
+}
+.swipe{
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+.swipe img{
+    width: 20%;
+    height: 130px;
+}
+</style>
+<body>
+    <header>
+        <div class="navI">
+           <a href="#sec1"> <img src="helado1.png" alt=""></a>
+           <span id="titulo"> <span class="azul">Häa</span><span class="blanco">gen-</span><span class="amarillo">Dazs</span></span>
+        </div>
+        <div class="navD">
+            <nav>
+              <a href="#sec2">Productos</a>
+              <a href="#bom">Bombones</a>
+              <a href="#sec3">Sabores</a>
+              <a href="#sec4">Sobre Nosotros</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="sec1">
+        <div class="conten">
+            <div class="cajai">
+                <img src="helado.gif" alt="">
+            </div>
+            <div class="cajad">
+                <div class="titulo">
+                    <h1>Disfruta de los Deliciosos Helados Häagen-Dazs</h1>
+                </div>
+            </div>
+        
+    </section>
+
+    <section id="sec2">
+        <h2 class="hel">Productos Minitarrinas</h2>
+        <div class="conten1">
+            <div class="tarrinas">
+                <img src="img/fresa.png" alt="">
+                <b>Minitarrina Strawberries & Cream</b>
+            </div>
+
+            <div class="tarrinas">
+                <img src="img/fresa1.png" alt="">
+                <b>Minitarrina Strawberry Cheesecake</b>
+            </div>
+
+            <div class="tarrinas">
+                <img src="img/fresa2.png" alt="">
+                <b>Minitarrina Macadamia Nut Brittle</b>
+            </div>
+
+            <div class="tarrinas">
+                <img src="img/fresa3.png" alt="">
+                <b>Minitarrina Belgian Chocolate</b>
+            </div>
+        </div>
+
+        <div class="conten1">
+            <div class="tarrinas">
+                <img src="img/fresa4.png" alt="">
+                <b>Minitarrina Cookies & Cream</b>
+            </div>
+
+            <div class="tarrinas">
+                <img src="img/fresa5.png" alt="">
+                <b>Minitarrina Lemon & Mandarin</b>
+            </div>
+
+            <div class="tarrinas">
+                <img src="img/fresa6.png" alt="">
+                <b>Minitarrina Dulce De Leche</b>
+            </div>
+
+            <div class="tarrinas">
+                <img src="img/fresa7.png" alt="">
+                <b>Minitarrina Vainilla</b>
+            </div>
+        </div>
+
+        <div class="conten1">
+            <div class="tarrinas">
+                <img src="img/fresa8.png" alt="">
+                <b>Minitarrina Peanut Butter Crunch</b>
+            </div>
+
+            <div class="tarrinas">
+                <img src="img/fresa9.png" alt="">
+                <b>Minitarrina Brownie Macchiato</b>
+            </div>
+
+            <div class="tarrinas">
+                <img src="img/fresa10.png" alt="">
+                <b>Minitarrina Vanilla Caramel Brownie</b>
+            </div>
+
+            <div class="tarrinas">
+                <img src="img/fresa11.png" alt="">
+                <b>Minitarrina Mango & Raspberry</b>
+            </div>
+        </div>
+    </section>
+
+    <section id="bom">
+        <h2 class="hel1">Bombones</h2>
+        <div class="conten2">
+            <div class="bombones">
+                <img src="img/bom.png" alt="">
+                <b>Bombón Chocolate Choc Almond</b>
+            </div>
+
+            <div class="bombones">
+                <img src="img/bom1.png" alt="">
+                <b>Bombón Macadamia Nut Brittle</b>
+            </div>
+
+            <div class="bombones">
+                <img src="img/bom2.png" alt="">
+                <b>Bombón Vanilla Caramel Almond</b>
+            </div>
+
+            <div class="bombones">
+                <img src="img/bom3.png" alt="">
+                <b>Bombón Peanut Butter Crunch</b>
+            </div>
+        </div>
+
+        <div class="conten2">
+            <div class="bombones">
+                <img src="img/bom4.png" alt="">
+                <b>Multipack Bombones Macadamia Nut Brittle</b>
+            </div>
+
+            <div class="bombones">
+                <img src="img/bom5.png" alt="">
+                <b>Multipack Chocolate Collection</b>
+            </div>
+
+            <div class="bombones">
+                <img src="img/bom6.png" alt="">
+                <b>Multipack Bombones Chocolate Choc Almond</b>
+            </div>
+        </div>
+
+        <div class="detalle">
+            <div class="botoncito">
+                <a href="bombones.html">Ver mas</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="sec3">
+        <h2 class="hel2">Sabores Häagen-Dazs</h2>
+        <div class="conte">
+            <div class="sabor">
+                <img src="img/sabo.png" alt="">
+                <p>Banana Peanut Butter Chip Ice Cream</p>
+            </div>
+
+            <div class="sabor">
+                <img src="img/sabo1.png" alt="">
+                <p>Amaretto Black Cherry Almond Toffee Non-Dairy</p>
+            </div>
+
+            <div class="sabor">
+                <img src="img/sabo2.png" alt="">
+                <p>Bourbon Praline Pecan Ice Cream</p>
+            </div>
+
+            <div class="sabor">
+                <img src="img/sabo3.png" alt="">
+                <p>Bourbon Vanilla Bean Truffle Ice Cream</p>
+            </div>
+        </div>
+
+        <div class="conte">
+            <div class="sabor">
+                <img src="img/sabo4.png" alt="">
+                <p>Butter Pecan Ice Cream</p>
+            </div>
+
+            <div class="sabor">
+                <img src="img/sabo5.png" alt="">
+                <p>Caramel Cone Ice Cream</p>
+            </div>
+
+            <div class="sabor">
+                <img src="img/sabo6.png" alt="">
+                <p>Cherry Vanilla Ice Cream</p>
+            </div>
+
+            <div class="sabor">
+                <img src="img/sabo7.png" alt="">
+                <p>Chocolate Ice Cream</p>
+            </div>
+
+            <div class="sabor1">
+                <img src="img/banana.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="conte">
+            <div class="sabor">
+                <img src="img/sabo8.png" alt="">
+                <p>Chocolate Chip Cookie Dough Ice Cream</p>
+            </div>
+
+            <div class="sabor">
+                <img src="img/sabo9.png" alt="">
+                <p>Chocolate Chocolate Chip Ice Cream</p>
+            </div>
+
+            <div class="sabor">
+                <img src="img/sabo10.png" alt="">
+                <p>Chocolate Peanut Butter Ice Cream</p>
+            </div>
+
+            <div class="sabor">
+                <img src="img/sabo11.png" alt="">
+                <p>Chocolate Salted Fudge Truffle Non-Dairy</p>
+            </div>
+
+            <div class="sabor">
+                <img src="img/sabo12.png" alt="">
+                <p>Chocolate Sea Salt Caramel HEAVEN Light Ice Cream</p>
+            </div>
+        </div>
+        <div class="swipe">
+           <a href="sabores.html"> <img src="img/swipe-up.gif" alt=""></a>
+        </div>
+    </section>
+
+    <section id="sec4">
+        <marquee><img src="img/dazs.png" alt=""><img src="img/dazs1.png" alt=""><img src="img/dazs2.png" alt=""><img src="img/daz3.png" alt=""></marquee>
+    </section>
+    
+</body>
+</html>
