@@ -12,8 +12,95 @@
         margin: 0px;
         padding: 0px;
     }
+    header{
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    background-color: rgba(233, 230, 230, 0.719);
+}
+.titu{
+    vertical-align: 80%;
+    font-size: 25px;
+    padding-top: 35px;
+}
+.cajita, .cajita2{
+    height: 100%;
+    width: 20%;
+    display: inline-block;
+    vertical-align: top; 
+    /*border: 1px solid black;*/
+    margin-left: 100px;
+    margin-right: 50px;
+}
+.cajita img{
+    height: 100%;
+}
+#spe{
+    height: 100vh;
+    padding-top: 120px;
+    background: url(fondo5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;  
+    background-position: center; 
+}
+.contenedor{
+    text-align: center;
+    /*border: 1px solid white;*/
+    padding-top: 20px;
+}
+.spec{
+    display: inline-block;
+    vertical-align: top;
+    height: 350px;
+    width: 40%;
+    margin-left: 10px;
+    margin-right: 10px;
+   /* border: 1px solid black;*/
+}
+.spec img{
+    width: 60%;
+}
+.spec p{
+    color: black;
+    font-size: 27px;
+}
 </style>
 <body>
+    <header>
+        <div class="cajita">
+         <a href="index.html"> <img src="helado3.gif" alt=""></a>
+       </div>
+       <div class="cajita2">
+          <h1  class="titu">Edicion Especial</h1>
+      </div>
+      </header>
+      
+      <section id="spe">
+        <div class="contenedor">
+            <div class="spec">
+                <img src="img/espe.png" alt="">
+                <p>Dulce de Leche Cookie Squares</p>
+            </div>
     
+            <div class="spec">
+                <img src="img/espe1.png" alt="">
+                <p>Irish Cream Cookie Squares</p>
+            </div>
+        </div>
+
+        <div class="contenedor">
+            <div class="spec">
+                <img src="img/espe2.png" alt="">
+                <p>Peanut Butter Cookie Squares</p>
+            </div>
+    
+            <div class="spec">
+                <img src="img/espe3.png" alt="">
+                <p>Vanilla Cookie Squares</p>
+            </div>
+        </div>
+      </section>
+      
 </body>
 </html>
